@@ -70,4 +70,4 @@ sqlparse==0.1.11
 ua-parser==0.3.5
 Unidecode==0.4.13
 user-agents==0.3.0
-Werkzeug==0.9.4
+Werkzeug==0.15.3
