@@ -58,7 +58,7 @@ python-memcached==1.48
 pytz==2013b0
 regex==0.1.20120904
 reportlab==3.1.8
-requests==1.2.3
+requests==2.20.0
 requests-oauthlib==0.3.2
 simplejson==3.3.0
 six==1.14.0
