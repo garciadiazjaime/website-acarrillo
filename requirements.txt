@@ -45,7 +45,7 @@ Jinja2==2.7.2
 MarkupSafe==0.19
 oauth2==1.5.211
 oauthlib==0.5.1
-paramiko==1.18.5
+paramiko==2.0.9
 Pillow==1.7.8
 purl==0.8
 pycparser==2.20
