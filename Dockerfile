@@ -10,4 +10,4 @@ ADD . /code
 
 EXPOSE 8000
 
-CMD [ "gunicorn", "--chdir", "project", "acarrillo.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD [ "gunicorn", "acarrillo.wsgi:application", "--bind", "0.0.0.0:8000"]
