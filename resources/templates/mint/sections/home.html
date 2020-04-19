@@ -1,0 +1,25 @@
+{% extends 'layout/base.html' %}
+
+{% block site_wrapper %}
+{% autoescape off %}
+{% for item in projects %}
+
+<div class="project" id="{{item.slug}}">
+	<div class="project_info">
+		<h1>{{item}}</h1>
+		{{item.description}}
+	</div>
+	{% for image in item.item_set.all %}
+		<div class="image_panel">
+			{% if image.title %}
+				<h2>{{image.title}}</h2>
+			{% endif %}
+			<img src="{{image.image.url}}" title="{{item}}" /> <br />
+		</div>
+	{% endfor %}
+	{{item.extra}}
+
+</div>
+{% endfor %}
+{% endautoescape %}
+{% endblock %}

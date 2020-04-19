@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<img src="{% static 'media/logo.png' %}" title="Andrea Carrillo" />
+<h1>andrea carrillo</h1>
+<p>
+	<a href="mailto:ac@acarrillo.info">ac@acarrillo.info</a>
+</p>
+
+<div class="panel">
+	<a data-toggle="collapse" data-parent="#main_menu" href="#portfolio">
+	   _portfolio
+	</a>
+	<div id="portfolio" class="collapse">
+		<ul>
+			{% for item in projects %}
+			<li><a href="#{{item.slug}}" title="{{item}}" data-slug="{{item.slug}}">{{item}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<div class="panel">
+	<a data-toggle="collapse" data-parent="#main_menu" href="#about">
+	   _about
+	</a>
+	<div id="about" class="collapse">
+		<p>
+			Andrea Carrillo Iglesias (Mexico, 1986) is an artist and designer living and working between Tijuana, Mexico City and Los Angeles. Carrillo holds a BA in Graphic Design from Art Center College of Design, and a Masters degree in Art, Design and the Public Domain from Harvard University Graduate School of Design. In 2015 she coursed a year of Graduate Studies in Visual Arts at Sandberg Instituut, Rietveld Academie, Amsterdam. 
+		</p>
+	 </div>
+</div>
+<div class="panel">
+	<a href="{% static 'media/resume.pdf' %}" title="Résumé" target="_blank">
+	   _résumé
+	</a>
+</div>
+<div class="panel">
+	<!--<a data-toggle="collapse" data-parent="#main_menu" href="#more">
+	   _more
+	</a>
+	<div id="more" class="collapse">
+		<ul>
+			<li><a href="http://whoismisterx.info" title="Alex Cerrilla" target="_blank">Alex Cerrilla</a></li>
+			<li><a href="http://erikyangdesign.com" title="Erik Yang" target="_blank">Erik Yang</a></li>
+			<li><a href="http://miguelinurreta.com" title="Miguel Inurreta" target="_blank">Miguel Inurreta</a></li>
+			<li><a href="http://www.miachamasmany.com" title="Mia Chamasmany" target="_blank">Mia Chamasmany</a></li>
+			<li><a href="http://www.heyorlando.net" title="Orlando Sanabria" target="_blank">Orlando Sanabria</a></li>
+			<li><a href="http://www.vanessalam.net/" title="Vanessa Lam" target="_blank">Vanessa Lam</a></li>
+		</ul>
+	<div>-->
+</div>

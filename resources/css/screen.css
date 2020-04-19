@@ -1,0 +1,166 @@
+/* line 4, ../sass/screen.sass */
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* line 7, ../sass/screen.sass */
+h1, h2, h3, h4, p, a {
+  font-size: 12;
+  color: black;
+  margin: 0;
+}
+
+/* line 11, ../sass/screen.sass */
+.container {
+  margin-left: 40px;
+  min-width: 780px;
+}
+
+/* **************************** MENU *********************************** */
+/* line 15, ../sass/screen.sass */
+.menu {
+  box-sizing: border-box;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* line 21, ../sass/screen.sass */
+.menu img {
+  margin-left: 20px;
+}
+/* line 24, ../sass/screen.sass */
+.menu h1 {
+  margin-top: 24px;
+  margin-left: 8px;
+}
+/* line 28, ../sass/screen.sass */
+.menu h2 {
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+/* line 32, ../sass/screen.sass */
+.menu p {
+  padding-left: 8px;
+  margin-bottom: 20px;
+}
+/* line 36, ../sass/screen.sass */
+.menu p a {
+  color: black;
+  text-transform: none;
+}
+/* line 40, ../sass/screen.sass */
+.menu a {
+  color: #2020f6;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* line 45, ../sass/screen.sass */
+.menu a:hover {
+  color: #4040ff;
+  text-decoration: none;
+}
+/* line 49, ../sass/screen.sass */
+.menu ul {
+  padding-left: 8px;
+}
+/* line 52, ../sass/screen.sass */
+.menu ul li {
+  list-style: none;
+}
+/* line 55, ../sass/screen.sass */
+.menu ul a {
+  color: black;
+  text-transform: none;
+}
+/* line 59, ../sass/screen.sass */
+.menu ul .active a {
+  color: #2020f6;
+}
+/* line 62, ../sass/screen.sass */
+.menu #about p {
+  line-height: 14px;
+  max-width: 198px;
+}
+
+/* **************************** PORTFOLIO *********************************** */
+/* line 66, ../sass/screen.sass */
+.portfolio {
+  padding-right: 50px;
+}
+/* line 68, ../sass/screen.sass */
+.portfolio .content {
+  width: 100%;
+}
+/* line 70, ../sass/screen.sass */
+.portfolio .project {
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+/* line 73, ../sass/screen.sass */
+.portfolio .project:first-child {
+  padding-top: 137px;
+}
+/* line 75, ../sass/screen.sass */
+.portfolio .project:last-child {
+  height: 100%;
+}
+/* line 77, ../sass/screen.sass */
+.portfolio .project h1 {
+  margin-bottom: 1em;
+}
+/* line 79, ../sass/screen.sass */
+.portfolio .project p {
+  line-height: 14px;
+  margin-bottom: 1em;
+  padding-right: 30%;
+  text-align: left;
+}
+/* line 84, ../sass/screen.sass */
+.portfolio .project p a {
+  color: #2020f6;
+  cursor: pointer;
+}
+/* line 87, ../sass/screen.sass */
+.portfolio .project p a:hover {
+  color: #4040ff;
+  text-decoration: none;
+}
+/* line 90, ../sass/screen.sass */
+.portfolio .project .project_info {
+  border-top: #2020f6 solid 1px;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 95, ../sass/screen.sass */
+.portfolio .project .image_panel h2 {
+  margin-bottom: 1em;
+}
+/* line 97, ../sass/screen.sass */
+.portfolio .project .image_panel img {
+  max-width: 100%;
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+
+/* line 101, ../sass/screen.sass */
+iframe {
+  margin: 0 0 30px;
+}
+
+/* line 103, ../sass/screen.sass */
+.panel {
+  margin-bottom: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 992) {
+  /* line 110, ../sass/screen.sass */
+  .portfolio .project p {
+    padding-right: 0;
+  }
+}

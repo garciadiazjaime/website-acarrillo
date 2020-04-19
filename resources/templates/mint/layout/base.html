@@ -1,0 +1,38 @@
+<html lang="sp">
+<head>
+	<title>Andrea Carrillo Iglesias</title>
+	<meta name="author" value="http://mintitmedia.com">
+	<meta name="description" value="">
+	<meta naem="viewport" content="width=device-width, initial-scale=1">
+	{% load staticfiles %}
+	<link rel="icon" type="image/x-icon" href="{% static 'media/favicon.ico' %}">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/screen.css' %}">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46360730-2', 'acarrillo.info');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-9 portfolio" role="main">
+				<div class="content">
+					{% block site_wrapper %}{% endblock %}
+				</div>
+			</div>
+			<div class="col-xs-3 menu" id="main_menu">
+				{% include 'layout/menu.html' %}
+			</div>
+		</div>		
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+</body>
+</html>
