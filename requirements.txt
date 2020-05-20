@@ -36,7 +36,7 @@ google-api-python-client==1.1
 grappelli-safe==0.2.22
 gunicorn==19.10.0
 html5lib==0.95
-httplib2==0.8
+httplib2==0.18.0
 invoke==1.4.1
 ipaddress==1.0.23
 isoweek==1.2.0
