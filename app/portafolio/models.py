@@ -34,7 +34,7 @@ class ProjectForm(ModelForm):
 
 
 class Item(models.Model):
-	project = models.ForeignKey(Project)
+	project = models.ForeignKey(Project, on_delete=models.CASCADE)
 	title = models.CharField(max_length=250, blank=True, null=True)
 	image = models.ImageField(upload_to='portafolio/images', blank=True, null=True)
 	weight = models.IntegerField(default=0)
