@@ -12,7 +12,7 @@
 	<div id="portfolio" class="collapse">
 		<ul>
 			{% for item in projects %}
-			<li><a href="#{{item.slug}}" title="{{item}}" data-slug="{{item.slug}}">{{item}}</a></li>
+			<li><a href="#{{item.slug}}" title="{{item.title}}" data-slug="{{item.slug}}">{{item.title}}</a></li>
 			{% endfor %}
 		</ul>
 	</div>

@@ -6,7 +6,7 @@
 
 <div class="project" id="{{item.slug}}">
 	<div class="project_info">
-		<h1>{{item}}</h1>
+		<h1>{{item.title}}</h1>
 		{{item.description}}
 	</div>
 	{% for image in item.item_set.all %}
@@ -14,7 +14,7 @@
 			{% if image.title %}
 				<h2>{{image.title}}</h2>
 			{% endif %}
-			<img src="{{image.image.url}}" title="{{item}}" /> <br />
+			<img src="{{image.image.url}}" title="{{item.title}}" /> <br />
 		</div>
 	{% endfor %}
 	{{item.extra}}
