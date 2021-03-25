@@ -12,7 +12,7 @@ class Project(models.Model):
 	weight = models.IntegerField(default=0)
 	date_created = models.DateField(auto_now=True)
 
-	def __unicode__(self):
+	def __str__(self):
 		return u'%s' %  (self.title)
 
 class ProjectForm(ModelForm):
@@ -39,7 +39,7 @@ class Item(models.Model):
 	image = models.ImageField(upload_to='portafolio/images', blank=True, null=True)
 	weight = models.IntegerField(default=0)
 
-	def __unicode__(self):
+	def __str__(self):
 		return u'%s' %  (self.image.name)
 
 class ItemForm(ModelForm):
